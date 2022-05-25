@@ -1,0 +1,25 @@
+{
+    "name": "mongodbcli",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BoltonAndrew/m37MongoDBCLI.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BoltonAndrew/m37MongoDBCLI/issues"
+    },
+    "homepage": "https://github.com/BoltonAndrew/m37MongoDBCLI#readme",
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "mongodb": "^4.6.0",
+        "yargs": "^17.5.1"
+    }
+}
