@@ -1,7 +1,7 @@
 exports.addMovie = async (movieObj, collection) => {
     const response = await collection.insertOne({ title: movieObj.title });
     if (response.acknowledged) {
-      console.log("Succesffully added movie");
+      console.log("Succesfully added movie");
     } else {
       console.log("Something went wrong");
     }
@@ -25,4 +25,16 @@ exports.addMovie = async (movieObj, collection) => {
     }
   };
 
-  exports.deleteMovie = async (filter, collection)
+  exports.deleteMovie = async (movieObj, collection) => {
+    console.log("Succesfully deleted movie")
+    const response = await collection.deleteOne({
+        title: movieObj.title
+    });
+    console.log("Succesfully deleted movie")
+    if (response.deletedCount > 0) {
+        console.log("Succesfully deleted movie")
+        console.log(response);
+    } else {
+        console.log(error)
+    }
+};
